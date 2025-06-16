@@ -1,0 +1,88 @@
+
+body {
+
+    font-family: 'Arial', sans-serif;
+    background-image: url('2.png');
+    background-size: cover; 
+    background-position: center; 
+    
+}
+#t{
+    color: thistle;
+    
+}
+
+  
+  .container {
+    max-width: 1200px;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .lead {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .table-responsive {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #007bff;
+    color: white;
+  }
+
+  /* CSS for the coin picking container and animation */
+.coin-picking-container {
+  padding: 20px;
+  border: 2px solid #ddd;
+  background-color: #f7f7f7;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.coin {
+  display: inline-block;
+  background-color: #ffeb3b;
+  padding: 10px;
+  margin: 5px;
+  font-size: 24px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.coin.highlight-coin {
+  animation: pulse 1s infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: #ffeb3b;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #ff9800;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #ffeb3b;
+  }
+}

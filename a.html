@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Form</title>
+</head>
+<body>
+
+    <h1>Example HTML Form</h1>
+
+    <form action="/submit" method="POST" enctype="multipart/form-data" target="_blank" id="userForm" name="userForm">
+        <!-- Text Input -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required minlength="3" maxlength="20">
+        <br><br>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Number Input -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" min="18" max="100" required>
+        <br><br>
+
+        <!-- Date Input -->
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <!-- Checkbox -->
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <br><br>
+
+        <!-- Dropdown Select -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option >United States</option>
+            <option value="UK">United Kingdom</option>
+            <option value="IN">India</option>
+            <option value="CA">Canada</option>
+        </select>
+        <br><br>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Write your message here" required></textarea>
+        <br><br>
+
+        <!-- File Input -->
+        <label for="profilePic">Upload Profile Picture:</label>
+        <input type="file" id="profilePic" name="profilePic" accept="image/*">
+        <br><br>
+        <label for="fruit1">Apple</label>
+<input type="checkbox" id="fruit1" name="fruit" value="apple">
+<label for="fruit2">Banana</label>
+<input type="checkbox" id="fruit2" name="fruit" value="banana">
+<label for="fruit3">Orange</label>
+<input type="checkbox" id="fruit3" name="fruit" value="orange">
+<input type="range" min="0" max="100" value="20"  step="10">
+
+
+        <!-- Submit Button -->
+        <button type="submit">Submite</button>
+        <!-- <input type="button" value=> -->''
+    </form>
+
+</body>
+</html>
